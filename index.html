@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#f8f1e9">
+  <title>CSSBuy spreadsheet på svenska | Kategorier, QC och frakt</title>
+  <meta name="description" content="Utforska tio produktkategorier och lär dig använda ett CSSBuy spreadsheet. Jämför säljarens mått, granska QC-bilder och uppskatta frakten till Sverige.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="CSSBuy spreadsheet på svenska | Kategorier, QC och frakt">
+  <meta property="og:description" content="En svensk guide till produktlänkar, passform, lagerbilder och frakt. Bläddra bland tio kategorier hos cafans.com.">
+  <meta property="og:image" content="https://cms-cdn.thesolesupplier.co.uk/2021/09/nike-air-max-90-white-black-dh8010-101-front_w900.jpg">
+  <meta property="og:image:alt" content="Vit Nike Air Max 90 med svart Swoosh">
+  <link rel="preconnect" href="https://cms-cdn.thesolesupplier.co.uk">
+  <!-- Redaktionsunderlag från Bing. De tio första organiska träffarna kom från nio domäner.
+    1. https://cssbuy.net/cssbuy-spreadsheet/ | kategorier, produktlänkar och köpsteg
+    2. https://cssbuy.net/ | produktfynd, nybörjarguider och frakt
+    3. https://cssbuyspreadsheet.eu/spreadsheet/ | europeiska leveransval och fraktbudget
+    4. https://repbuytools.com/agents/cssbuy-spreadsheet | länkformat och bildserier
+    5. https://www.jadeship.com/spreadsheet/id/1yrBCRcviHaZJAfnWgFq7wc-zDjbbAomwmCS9rGM4uMg | köpanteckningar och dubbletter
+    6. https://rep.tools/guides/cssbuy-spreadsheet | marknadsplatslänkar och agentlänkar
+    7. https://cssbuydb.com/ | produktkategorier och köpanteckningar
+    8. https://cssbuysspreadsheet.com/ | kategorifilter, ursprungslänkar och QC
+    9. https://cssbuy-reps.com/ | produktkategorier och beställningsflöde
+    10. https://cssbuyspreadsheet.guide/cssbuy-spreadsheet/ | katalogstruktur och produktjämförelse
+  -->
+  <!-- Sökteman i texten
+    Sekundära: CSSBuy-produktlänkar, CSSBuy-storleksguide, CSSBuy QC-bilder, CSSBuy-frakt till Sverige.
+    Längre sökfraser: ursprungslänk till Taobao, produktlänk till Weidian, ursprungslänk till 1688,
+    agentlänk till rätt modell, sök på artikelnummer och säljarnamn, pris per styck,
+    minsta beställningsantal, skotabell med fotlängd, innersulans längd, jämför EU-storlek,
+    mäta bröstbredd på hoodie, ärmlängd och plagglängd, midjevidd och innerbenslängd,
+    storleksetikett på skor, närbild på yttersulan, kontrollera tryckplacering på matchtröjor,
+    lagerfoto med måttband, tidsfrist för retur, kontrollera varans ursprung,
+    huvudomkrets för keps, armbandets innermått, jämför frakt till Sverige,
+    paketets faktiska vikt, paketets yttermått, volymvikt eller faktisk vikt,
+    frakt i svenska kronor, kostnad för internationell frakt, spårning av paket.
+  -->
+  <style>
+    :root{color-scheme:light;--paper:#f8f1e9;--ink:#241a21;--muted:#604c56;--wine:#782b51;--line:#dac7cd;--rose:#efd4df;--card:#fffaf6}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit;text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.1}
+    h1,h2{font-family:Georgia,serif;font-weight:700;letter-spacing:-.045em}
+    h1{font-size:clamp(2.4rem,7vw,5.5rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(1.8rem,4.5vw,3.15rem)}
+    h3{font-size:1.13rem}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(74rem,calc(100% - 2rem));margin-inline:auto}
+    .mast{border-bottom:1px solid var(--line)}
+    .mast .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.3rem 1rem;padding-block:.75rem}
+    .brand{font-weight:850}
+    .label{color:var(--wine);font-size:.77rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .intro{padding-block:clamp(1.3rem,4vw,3.2rem) 1.15rem}
+    .intro h1{margin:.22rem 0 .5rem}
+    .intro p:last-child{max-width:68ch;color:var(--muted)}
+    .shelf{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:1rem}
+    .categories{background:var(--card);padding:clamp(.85rem,2.2vw,1.5rem);border:1px solid var(--line);border-radius:1.2rem}
+    .categories h2{font-size:clamp(1.45rem,3vw,2.1rem)}
+    .categories ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 .8rem;padding:0;margin:.6rem 0 0;list-style:none}
+    .categories a{display:flex;justify-content:space-between;align-items:center;gap:.3rem;min-height:2.65rem;height:100%;border-bottom:1px solid var(--line);padding:.3rem .2rem;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover{color:var(--wine);text-decoration:underline}
+    .categories a span{color:var(--wine)}
+    .cover{display:grid;align-content:center;background:var(--rose);padding:clamp(.65rem,2vw,1.15rem);border-radius:1.2rem}
+    .cover img{aspect-ratio:16/9;object-fit:contain;background:#fff;border-radius:.7rem}
+    figcaption{padding:.45rem .15rem 0;font-size:.86rem;color:var(--muted)}
+    .section{margin-top:clamp(2.3rem,6vw,4.5rem)}
+    .section h2{margin:.25rem 0 .65rem}
+    .lede{max-width:68ch;color:var(--muted)}
+    .guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+    .guides article{border-top:3px solid var(--wine);background:var(--card);padding:clamp(.9rem,2vw,1.35rem)}
+    .guides h3{margin:.35rem 0 .5rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin-top:1rem}
+    .gallery figure{padding:.45rem;border:1px solid var(--line);border-radius:.8rem;background:var(--card)}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#fff;border-radius:.5rem}
+    .checklist{padding:clamp(1rem,3vw,2rem);border-radius:1.2rem;background:var(--rose)}
+    .checklist ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem 2rem;margin:.75rem 0 0;padding-left:1.2rem}
+    .faq{max-width:56rem}
+    details{border-top:1px solid var(--line)}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{padding:.7rem 0;cursor:pointer;font-weight:750}
+    details p{max-width:68ch;padding:0 0 .85rem;color:var(--muted)}
+    footer{margin-top:3rem;padding-block:1.25rem;background:var(--ink);color:var(--paper)}
+    footer p{margin-top:.3rem;max-width:70ch;font-size:.92rem}
+    footer a:focus-visible{outline-color:var(--rose)}
+    @media(max-width:46rem){.shelf{grid-template-columns:1fr}.cover img{aspect-ratio:2/1}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:34rem){.guides,.checklist ul{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"#guide",
+        "name":"CSSBuy spreadsheet på svenska | Kategorier, QC och frakt",
+        "description":"Utforska tio produktkategorier och lär dig använda ett CSSBuy spreadsheet. Jämför säljarens mått, granska QC-bilder och uppskatta frakten till Sverige.",
+        "inLanguage":"sv",
+        "hasPart":[{"@id":"#produktlankar"},{"@id":"#storlekar"},{"@id":"#qc"},{"@id":"#frakt"},{"@id":"#faq"}]
+      },
+      {"@type":"Article","@id":"#produktlankar","headline":"CSSBuy-produktlänkar och säljarens annons","inLanguage":"sv"},
+      {"@type":"Article","@id":"#storlekar","headline":"CSSBuy-storleksguide för skor och kläder","inLanguage":"sv"},
+      {"@type":"Article","@id":"#qc","headline":"CSSBuy QC-bilder från lagret","inLanguage":"sv"},
+      {"@type":"Article","@id":"#frakt","headline":"CSSBuy-frakt till Sverige","inLanguage":"sv"},
+      {
+        "@type":"FAQPage",
+        "@id":"#faq",
+        "name":"Vanliga frågor om CSSBuy spreadsheet",
+        "inLanguage":"sv",
+        "mainEntity":[
+          {"@type":"Question","name":"Vad är ett CSSBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är en produktlista med länkar, ofta till Taobao, Weidian eller 1688. Listan kan också innehålla bilder, prisuppgifter och anteckningar om olika varianter."}},
+          {"@type":"Question","name":"Vart leder kategorilänkarna på den här sidan?","acceptedAnswer":{"@type":"Answer","text":"De öppnar motsvarande produktkategori på cafans.com. Välj en kategori för att bläddra i den katalogen."}},
+          {"@type":"Question","name":"Hur hittar jag rätt artikel när en produktlänk har slutat fungera?","acceptedAnswer":{"@type":"Answer","text":"Sök på artikelnummer och säljarnamn. Jämför färg, material och modellbeteckning i den nya annonsen med dina anteckningar innan du lägger till varan igen."}},
+          {"@type":"Question","name":"Kan QC-bilder visa om en märkesvara är äkta?","acceptedAnswer":{"@type":"Answer","text":"QC-bilder hjälper dig att bedöma synliga detaljer och skick. En äkthetsbedömning kräver tillförlitliga uppgifter om varans ursprung och kan behöva göras av en sakkunnig."}},
+          {"@type":"Question","name":"När kan jag jämföra frakt till Sverige mest rättvist?","acceptedAnswer":{"@type":"Answer","text":"Jämför när du har paketets faktiska vikt och yttermått. Använd samma destination och paketuppgifter för alla fraktalternativ och kontrollera vad varje pris täcker."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/clsrn/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <span class="label">Svensk inköpsguide</span>
+    </div>
+  </header>
+
+  <main class="wrap" id="guide">
+    <section class="intro" aria-labelledby="titel">
+      <p class="label">Produktval, passform och leverans</p>
+      <h1 id="titel">CSSBuy spreadsheet</h1>
+      <p>Ett CSSBuy spreadsheet är en produktlista som samlar länkar till säljare, ofta med bilder och uppgifter om varianter. Här kan du öppna tio kategorier hos cafans.com och läsa vad du behöver kontrollera innan du beställer via en inköpsagent.</p>
+    </section>
+
+    <div class="shelf">
+      <nav class="categories" aria-labelledby="kategorier">
+        <h2 id="kategorier">Välj produktkategori</h2>
+        <ul>
+          <li><a href="https://cafans.com/category-911-Shoes.html">Skor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies och tröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Jackor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Byxor och shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Kepsar och mössor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Klädset <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underkläder <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Matchtröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoarer <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+      <figure class="cover">
+        <img src="https://cms-cdn.thesolesupplier.co.uk/2021/09/nike-air-max-90-white-black-dh8010-101-front_w900.jpg" width="900" height="506" alt="Vit Nike Air Max 90 med svart Swoosh" loading="eager" fetchpriority="high">
+        <figcaption>Nike Air Max 90 · Referens för modell och färg</figcaption>
+      </figure>
+    </div>
+
+    <section class="section" aria-labelledby="artiklar">
+      <p class="label">Inköpsguiden</p>
+      <h2 id="artiklar">Fyra kontroller före leverans</h2>
+      <p class="lede">Spara det du har kontrollerat på samma rad som produktlänken. Då kan du jämföra annonsen med ordern och lagerbilderna när varan kommer fram till agenten.</p>
+      <div class="guides">
+        <article id="produktlankar">
+          <p class="label">01 · Annonsen</p>
+          <h3>CSSBuy-produktlänkar och säljarens annons</h3>
+          <p>Öppna ursprungslänken till Taobao, Weidian eller 1688. Spara artikelnummer, säljarnamn och den valda färgvarianten. Om en agentlänk öppnar fel modell kan du gå tillbaka till säljarens annons. Kontrollera även pris per styck och minsta beställningsantal, särskilt när annonsen visar flera förpackningsstorlekar.</p>
+        </article>
+        <article id="storlekar">
+          <p class="label">02 · Måtten</p>
+          <h3>CSSBuy-storleksguide för skor och kläder</h3>
+          <p>Kontrollera om säljarens skotabell anger fotlängd eller innersulans längd. För en hoodie kan du mäta bröstbredd, ärmlängd och plagglängd på en tröja som passar. För byxor är midjevidd och innerbenslängd användbara. Jämför samma slags mått och kontrollera om midjan mäts plant eller runt om.</p>
+        </article>
+        <article id="qc">
+          <p class="label">03 · Lagerbilderna</p>
+          <h3>CSSBuy QC-bilder från lagret</h3>
+          <p>Granska bilderna av varan som lagret tog emot. För skor är sulmönster, häl och storleksetikett bra att se. För jackor och matchtröjor kan du kontrollera sömmar, dragkedja och tryckplacering. Om en detalj saknas, be om en närbild eller ett foto med måttband och kontrollera tidsfristen för retur.</p>
+        </article>
+        <article id="frakt">
+          <p class="label">04 · Paketet</p>
+          <h3>CSSBuy-frakt till Sverige</h3>
+          <p>Jämför fraktalternativ med samma leveransadress, paketmått och vikt. Kontrollera om transportören använder volymvikt eller faktisk vikt när priset räknas ut. Räkna om varans pris och frakt till svenska kronor med samma växelkurs och se vilka avgifter som ingår. Kontrollera också vad som gäller för spårning och eventuell ersättning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bilder">
+      <p class="label">Bildreferenser</p>
+      <h2 id="bilder">Detaljer att jämföra</h2>
+      <p class="lede">Bilderna visar exempel på detaljer du kan leta efter i en produktannons. Aktuellt sortiment visas i respektive kategori hos cafans.com.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1715237106/788093_XJGL3_9669_001_100_0000_Light-t-shirt-aus-baumwolljersey-mit-print.jpg" width="1200" height="1200" alt="Vit Gucci T-shirt med tryck framtill" loading="lazy" decoding="async">
+          <figcaption>Gucci · Tryckets placering</figcaption>
+        </figure>
+        <figure>
+          <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M5381L_PM2_Front%20view.jpg" width="600" height="600" alt="Svart Louis Vuitton Monogram Essential-keps framifrån" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Mönster och skärm</figcaption>
+        </figure>
+        <figure>
+          <img src="https://kream-phinf.pstatic.net/MjAyMjA5MjhfMjAw/MDAxNjY0MzMyNTI5OTY0.uBfDi_9E7OYwLaAKue4NOFoK8VUudy4lRxXjYsRSotkg.bcVrkJ1ugk2JgXXCORublXIgtqAqXFpdR-oNuFy1jpgg.JPEG/a_20930a15b0d54c369b36429441e1ad42.jpg?type=l" width="600" height="600" alt="Hermès Clic H-armband med orange emalj och H-format spänne" loading="lazy" decoding="async">
+          <figcaption>Hermès · Spänne och emalj</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_25_3_LOOK_021_E26?%24lookDefault_GH-GHC%24=&amp;bfc=on&amp;crop=568%2C0%2C1864%2C2000&amp;hei=2000&amp;qlt=85&amp;scale=1&amp;wid=1850" width="1850" height="2000" alt="Modell med svart Dior CD Icon-keps med metallmärke på sidan" loading="lazy" decoding="async">
+          <figcaption>Dior · Märkets placering</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section checklist" aria-labelledby="jamfor">
+      <h2 id="jamfor">Anteckna en rad per vara</h2>
+      <p>Med samma fält för varje vara kan du jämföra erbjudanden och återvända till rätt annons senare.</p>
+      <ul>
+        <li><strong>Skor:</strong> modellkod, EU-storlek, fotmått och närbild på yttersulan.</li>
+        <li><strong>Tröjor och jackor:</strong> tygtyp, storlekstabell, bröstbredd och dragkedjans längd.</li>
+        <li><strong>Kepsar och smycken:</strong> huvudomkrets, justerbart spänne, armbandets innermått och material.</li>
+        <li><strong>Leverans:</strong> varupris, inrikesfrakt, paketets yttermått och kostnad för internationell frakt.</li>
+      </ul>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="fragor">
+      <h2 id="fragor">Vanliga frågor om CSSBuy spreadsheet</h2>
+      <details open>
+        <summary>Vad är ett CSSBuy spreadsheet?</summary>
+        <p>Det är en produktlista med länkar, ofta till Taobao, Weidian eller 1688. Listan kan också innehålla bilder, prisuppgifter och anteckningar om olika varianter.</p>
+      </details>
+      <details>
+        <summary>Vart leder kategorilänkarna på den här sidan?</summary>
+        <p>De öppnar motsvarande produktkategori på cafans.com. Välj en kategori för att bläddra i den katalogen.</p>
+      </details>
+      <details>
+        <summary>Hur hittar jag rätt artikel när en produktlänk har slutat fungera?</summary>
+        <p>Sök på artikelnummer och säljarnamn. Jämför färg, material och modellbeteckning i den nya annonsen med dina anteckningar innan du lägger till varan igen.</p>
+      </details>
+      <details>
+        <summary>Kan QC-bilder visa om en märkesvara är äkta?</summary>
+        <p>QC-bilder hjälper dig att bedöma synliga detaljer och skick. En äkthetsbedömning kräver tillförlitliga uppgifter om varans ursprung och kan behöva göras av en sakkunnig.</p>
+      </details>
+      <details>
+        <summary>När kan jag jämföra frakt till Sverige mest rättvist?</summary>
+        <p>Jämför när du har paketets faktiska vikt och yttermått. Använd samma destination och paketuppgifter för alla fraktalternativ och kontrollera vad varje pris täcker.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">Utforska katalogen på www.cafans.com</a>
+      <p>Fristående svensk köpguide. Varumärkena anges för att identifiera modellerna i bildexemplen.</p>
+    </div>
+  </footer>
+</body>
+</html>
